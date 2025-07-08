@@ -7,11 +7,11 @@ terraform {
   }
   backend "s3" {
     bucket = "dev1407-dev"
-    key    = "roboshop-dev-sg"
+    key    = "roboshop-dev-sgroup"
     region = "us-east-1"
     encrypt      = true  
     use_lockfile = true  #S3 native locking
-    # dynamodb_table = "dev1407-remote-state"
+    # dynamodb_table = "dev1407-remote-state" 
   }
 }
 
